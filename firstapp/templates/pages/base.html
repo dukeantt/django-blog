@@ -2,12 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    {% load static %}
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
-Nội dung
-{% block content %}
-
-{% endblock %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2">
+            <center><img src="{% static 'img/angrycat.jpg' %}" class="responsive-img" style="max-height:150px" alt=""/>
+            </center>
+        </div>
+        <div class="col-sm-10">
+            <center><h1>Blog About Cat</h1></center>
+        </div>
+    </div>
+</div>
+{#Nội dung#}
+{#{% block content %}#}
+{##}
+{#{% endblock %}#}
 </body>
 </html>
